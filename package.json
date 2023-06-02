@@ -1,9 +1,13 @@
 {
+  "homepage": "https://Navidwasim.github.io/Todolist",
   "name": "todo",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "Index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,10 +16,23 @@
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "mongoose": "^6.10.0"
+    "mongoose": "^6.10.0",
+    "process": "^0.11.10"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
